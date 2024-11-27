@@ -1,0 +1,35 @@
+@import 'base/reset.css';
+
+.page_header{
+    display: flex;
+}
+.hader_logo {
+    align-items: center;
+    margin-left: 81px;
+}
+.header_navigation{
+    margin-left: 79px;
+}
+.header_navigation ul{
+    display: flex;
+    align-items: center;
+}
+.header_navigation li, a{
+    list-style-type: none;
+    text-decoration: none;
+}
+.header_navigation_a{
+    color: #272727;
+    font-size: 10px;
+    line-height: 11.72px;
+    padding: 0 33px 0 33px;
+    
+}
+.header_button_div{
+    margin-left: 515px;
+}
+.header_button{
+    color: #272727;
+    font-size: 10px;
+    line-height: 11.72px;
+}
