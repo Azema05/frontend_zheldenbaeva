@@ -2,13 +2,21 @@
 
 .page_header{
     display: flex;
+    background-image: url(/img/Rectangle\ 10.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 1;
 }
 .hader_logo {
     align-items: center;
     margin-left: 81px;
+    margin-top: 42px;
 }
 .header_navigation{
     margin-left: 79px;
+    margin-top: 42px;
 }
 .header_navigation ul{
     display: flex;
@@ -27,9 +35,28 @@
 }
 .header_button_div{
     margin-left: 515px;
+    margin-top: 42px;
 }
 .header_button{
-    color: #272727;
+    color: #ffffff;
     font-size: 10px;
     line-height: 11.72px;
+}
+
+.img_hero{
+    position: absolute;
+    z-index: -1;
+    margin-left: 653px;
+}
+.text_hero{
+    position: absolute;
+    z-index: -1;
+    width: 481.16px;
+    height: 122.64px;
+    margin-top: 195px;
+    margin-left: 81px;
+}
+.text_header{
+    width: 510px;
+    height: 62px;
 }
