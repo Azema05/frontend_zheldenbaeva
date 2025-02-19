@@ -172,7 +172,8 @@ a {
     align-items: center;
     justify-content: center;
 }
-.content_section4 {
+.section_3_4 {
     background-image: url(/img/Rectangle\ 11.png);
     background-repeat: no-repeat;
+    background-position-y: 276px;
 }
