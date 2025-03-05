@@ -228,12 +228,9 @@ a {
 .content_section5{
     display: flex;
     margin-top: 29px;
-    /* width: 1188px; */
     justify-content: center;
-    /* margin-left: 139px; */
 }
 .text_section5{
-    /* margin-left: 139px; */
     padding-top: 121px;
 }
 .text_sec5{
@@ -243,7 +240,6 @@ a {
     line-height: 18.75px;
     color: #60606080;
     font-weight: 600;
-    /* text-align: start; */
 }
 .text2_sec5{
     width: 464px;
@@ -251,7 +247,6 @@ a {
     font-size: 48px;
     line-height: 51.84px;
     color: #272727;
-    /* text-align: left; */
     font-weight: 900; 
 }
 .text3_sec5{
@@ -283,4 +278,76 @@ a {
     font-size: 12px;
     line-height: 14.06px;
     text-align: center; 
+}
+.content_section6{
+    margin-top: 69px;
+    background-image: url(/img/Vector\ 7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 186px;
+}
+.sec6_world{
+    display: flex;
+    background-image: url(/img/Subtract.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    justify-content: center;
+    column-gap: 257px;
+    padding-bottom: 18%;
+}
+.sec6_world_text{
+    margin-top: 423px;
+}
+.text_section6{
+    width: 400px;
+    height: 156px;
+    font-size: 48px;
+    line-height: 51.84px;
+    color: #ffffff;
+    font-weight: 900; 
+}
+.text2_section6{
+    margin-top: 22px;
+    width: 400px;
+    height: 93px;
+    font-size: 18px;
+    line-height: 30.78px;
+    color: #958A8A;  
+}
+.div_btn_splice{
+    margin-top: 40px;
+    width: 154px;
+    height: 37px;
+    background-color: #0033FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 105px; 
+}
+.btn_splice{
+    color: #ffffff;
+    width: 84px;
+    height: 15px;
+    font-size: 12px;
+    line-height: 14.06px;
+    text-align: center; 
+}
+.img_msg_sec6{
+    margin-top: 328px;
+}
+.img1_msg_sec6 {
+    display: flex;
+    column-gap: 100px;
+}
+.img2_msg_sec6{
+    display: flex;
+    column-gap: 100px;
+    margin-left: 79px;
+    margin-top: 39px;
+}
+.section_6_2{
+    background-image: url(/img/Patterns.png);
+    background-repeat: no-repeat;
+    display: flex;
 }
