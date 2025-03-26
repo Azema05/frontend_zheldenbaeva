@@ -284,7 +284,8 @@ a {
     background-image: url(/img/Vector\ 7.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: 186px;
+    /* background-position-y: 186px; */
+    background-position-y: bottom;
 }
 .sec6_world{
     display: flex;
@@ -294,6 +295,7 @@ a {
     justify-content: center;
     column-gap: 257px;
     padding-bottom: 18%;
+  
 }
 .sec6_world_text{
     margin-top: 423px;
@@ -352,6 +354,7 @@ a {
     background-image: url(/img/Patterns.png);
     background-repeat: no-repeat;
     padding-top: 167px;
+    padding-bottom: 347px;
 }
 .herotext_sec6_2{
     width: 441px;
@@ -372,7 +375,7 @@ a {
     height: 24px;
     font-size: 22px;
     color: #ffffff;
-    font-weight: 400;   
+    font-weight: 500;   
 }
 .text2sec6_2{
     margin-top: 19px;
@@ -421,4 +424,58 @@ a {
     height: 54px;
     font-size: 16px;
     color: #958A8A;  
+}
+.card{
+    background: #202020;
+    color: #FFFFFF;
+    padding: 28px;
+    max-width: 290px;
+    border-radius: 3px;
+}
+.card_text {
+    font-size: 18px;
+    font-weight: 400;
+    height: 95px;
+    width: 234px;
+}
+.card_footer{
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.card_avatar{
+    width: 40px;
+}
+.card_person{
+    display: grid;
+}
+.block_gradient{
+
+    width: 1280px;
+    height: 232px;
+    color: #FFFFFF;
+    background: linear-gradient(135deg, #A659FF,#7178FF,#2148FF,#FF3517);
+    border-radius: 22px;
+    margin: -176px auto 0;
+}
+.text_gradient{
+    padding-top: 43px;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    font-stretch: expanded;
+}
+.div_btn_gradient{
+    border: 1px solid #FFFFFF;
+    border-radius: 105px;
+    width: 184px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px auto;
+}
+.btn_gradient{
+    color: #FFFFFF;
 }
