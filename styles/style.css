@@ -451,7 +451,6 @@ a {
     display: grid;
 }
 .block_gradient{
-
     width: 1280px;
     height: 232px;
     color: #FFFFFF;
@@ -478,4 +477,42 @@ a {
 }
 .btn_gradient{
     color: #FFFFFF;
+}
+.footer_first_line{
+    display: flex;
+    margin-top: 94px;
+    justify-content: space-around;
+}
+.line_1_column_5,
+.line_1_column_4,
+.line_1_column_3,
+.line_1_column_2,
+.line_1_column_1{
+line-height: 30px;
+}
+.text_1_column_5,
+.text_1_column_4,
+.text_1_column_3,
+.text_1_column_2{
+    font-size: 15px;
+    color: #0C0C0C;
+    font-weight: 600;
+    line-height: 40px;
+}
+.text_column_5,
+.text_column_4,
+.text_column_3,
+.text_column_2,
+.text_1_column_1{
+    color: #606060;
+    font-weight: 100;
+}
+
+
+
+
+
+.footer_second_line{
+    display: flex;
+    margin-top: 64px;
 }
