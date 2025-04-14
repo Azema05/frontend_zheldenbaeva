@@ -28,17 +28,37 @@ a {
 }
 .header_navigation_a {
     color: #272727;
-    font-size: 10px;
+    font-size: 11px;
     line-height: 11.72px;
-    padding: 0 33px 0 33px;
+    padding: 0 34px 0 34px;
+    font-weight: 600;
 }
-.header_button_div {
-    margin-left: 515px;
+.header_btn_div {
+    margin-left: 700px;
     margin-top: 42px;
+    display: flex;
+}
+.btn_div1{
+    width: 119px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn_div1:hover{
+    width: 119px;
+    height: 39px;
+    background-color: #FFFFFF42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 105px;
+    transition: 0.7s;
 }
 .header_button {
     color: #ffffff;
-    font-size: 10px;
+    font-size: 11px;
     line-height: 11.72px;
 }
 .text_hero {
