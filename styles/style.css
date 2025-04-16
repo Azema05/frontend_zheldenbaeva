@@ -4,6 +4,7 @@ body {
     font-family: sans-serif;
 }
 .page_header .container {
+    width: 100%;
     display: flex;
     position: absolute;
     z-index: 1;
@@ -34,7 +35,8 @@ a {
     font-weight: 600;
 }
 .header_btn_div {
-    margin-left: 700px;
+    margin-left: auto;
+    margin-right: 100px;
     margin-top: 42px;
     display: flex;
 }
