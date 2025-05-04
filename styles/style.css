@@ -307,7 +307,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     /* background-position-y: 186px; */
-    background-position-y: bottom;
+    background-position-y: 182px;
 }
 .sec6_world{
     display: flex;
@@ -357,7 +357,7 @@ a {
     line-height: 14.06px;
     text-align: center; 
 }
-.img_msg_sec6{
+.cards{
     margin-top: 328px;
     background-image: url(/img/Patterns.png);
     background-repeat: no-repeat;
@@ -500,7 +500,7 @@ a {
 .btn_gradient{
     color: #FFFFFF;
 }
-.footer_first_line{
+/* .footer_first_line{
     display: flex;
     margin-top: 94px;
     justify-content: space-evenly;
@@ -546,4 +546,68 @@ height: 230px;
 }
 .img_column_5{
     padding-right: 7px;
-}
+} */
+
+.footer-container {
+    max-width: 1222px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .logo-section {
+    flex: 1 1 200px;
+  }
+  
+  .social-section {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu-grid {
+    flex: 3 1 600px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .menu-column {
+    flex: 1 1 200px;
+    min-width: 200px;
+  }
+  
+  .menu-column h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  
+  .menu-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-column li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2.2;
+  }
+  .social-icons a {
+    margin-right: 15px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .additional-links a {
+    font-size: 10px;
+    color: #666;
+    margin-right: 20px;
+  }
+  .copyright{
+    font-size: 10px;
+    color: #666;
+  }
