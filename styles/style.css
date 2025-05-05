@@ -447,6 +447,9 @@ a {
     font-size: 16px;
     color: #958A8A;  
 }
+.span_color{
+    color: #0033FF;
+}
 .card{
     background: #202020;
     color: #FFFFFF;
@@ -473,7 +476,7 @@ a {
     display: grid;
 }
 .block_gradient{
-    width: 1380px;
+    width: 1340px;
     height: 232px;
     color: #FFFFFF;
     background: linear-gradient(135deg, #A659FF,#7178FF,#2148FF,#FF3517);
@@ -549,9 +552,9 @@ height: 230px;
 } */
 
 .footer-container {
-    max-width: 1222px;
+    max-width: 1340px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 90px 25px 0px 25px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -561,6 +564,12 @@ height: 230px;
     flex: 1 1 200px;
   }
   
+  .copyright{
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #606060;
+  }
   .social-section {
     flex: 1 1 200px;
     display: flex;
@@ -571,18 +580,21 @@ height: 230px;
     flex: 3 1 600px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    row-gap: 64px;
+    column-gap: 30px;
   }
   
   .menu-column {
     flex: 1 1 200px;
-    min-width: 200px;
   }
   
-  .menu-column h3 {
-    font-size: 16px;
+  .menu-column h2 {
+    font-size: 15px;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    color: #0C0C0C;
+    font-weight: 600;
+    /* line-height: 40px; */
   }
   
   .menu-column ul {
@@ -591,23 +603,31 @@ height: 230px;
   }
   
   .menu-column li a {
-    color: #333;
+    color: #606060;
+    font-weight: 400;
     text-decoration: none;
     font-size: 14px;
-    line-height: 2.2;
+    line-height: 33px;
   }
   .social-icons a {
-    margin-right: 15px;
+    margin-right: 20px;
     font-size: 18px;
-    color: #333;
+    color: #606060;
   }
-  
+  .social-section h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #0C0C0C;
+    font-weight: 600;
+    /* line-height: 40px; */
+  }
   .additional-links a {
     font-size: 10px;
-    color: #666;
+    color: #606060;
     margin-right: 20px;
+    line-height: 20px;
   }
-  .copyright{
-    font-size: 10px;
-    color: #666;
+  .additional-links{
+    padding-top: 20px;
   }
