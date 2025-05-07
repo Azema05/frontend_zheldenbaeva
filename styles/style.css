@@ -215,6 +215,21 @@ a {
     justify-content: center;
 }
 
+.swiper {
+    width: 100vw;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    transition-timing-function: linear;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .section_3_4 {
     background-image: url(/img/Rectangle\ 11.png);
     background-repeat: no-repeat;

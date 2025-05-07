@@ -50,3 +50,35 @@ const cards = {
     }
   }
   showAllCards(cards)
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   new Swiper('.mySwiper', {
+//       loop: true,
+
+//       pagination: {
+//           el: '.swiper-pagination',
+//           clickable: true,
+//       },
+
+//       navigation: {
+//           nextEl: '.swiper-button-next',
+//           prevEl: '.swiper-button-prev',
+//       },
+
+//       autoplay: {
+//           delay: 3000,
+//       },
+//   });
+// });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  new Swiper('.mySwiper', {
+      loop: true,
+      autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+      },
+      speed: 1000,
+  });
+});
