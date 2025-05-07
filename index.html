@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body class="page">
@@ -14,9 +15,8 @@
         <div class="container">
 
             <a class="hader_logo" href="#">
-                <img src="/img/Group.svg" alt="splice">
+                <img src="img/Group.svg" alt="splice">
             </a>
-            
             <nav class="header_navigation">
                 <ul>
                     <li><a class="header_navigation_a" href="#">STUDIO</a></li>
@@ -26,89 +26,291 @@
                     <li><a class="header_navigation_a" href="#">BLOG </a></li>
                 </ul>
             </nav>
-            <div class="header_button_div">
-                <a class="header_button" href="#">LOG IN</a>
-                <a class="header_button" href="#">SUGN UP</a>
+            <div class="header_btn_div">
+              <div class="btn_div1"><a class="header_button" href="#">LOG IN</a></div>  
+              <div class="btn_div1"><a class="header_button" href="#">SUGN UP</a></div>  
             </div>
         </div>
     </header>
-    
-    
+
+
     <main class="page_content content">
         <section class="content_section1 hero">
             <div class="hero__description">
-                <img class="text_hero" src="/img/Group 6.png" alt="text">
-                <div class="text_header"><p>Royalty-free sounds. Industry-leading software. Endless inspiration. Start creating with Splice.</p></div>
-                <div class="btn_hero_div"><a class="btn_hero" href="#">SUGN UP</a></div> 
+              <img class="text_hero" src="img/Group 6.png" alt="text">
+                <div class="text_header">
+                    <p>Royalty-free sounds. Industry-leading software. Endless inspiration. Start creating with
+                        Splice.
+                    </p>
+                </div>
+                <div class="btn_hero_div"><a class="btn_hero" href="#">SUGN UP</a></div>
             </div>
 
-            <img class="img_hero hero__img" src="/img/Vector 5.png" alt="people"> 
+            <img class="img_hero hero__img" src="img/Vector 5.png" alt="people">
         </section>
 
         <section class="content_section2 text_img">
             <p class="text_sec2">FEATURED IN</p>
             <div class="imgs_sec2">
-                <img src="/img/image 1.png" alt="logo_text1">
-                <img src="/img/image 5.png" alt="logo_text2">
-                <img src="/img/image 4.png" alt="logo_text3">
-                <img src="/img/image 3.png" alt="logo_text4">
-                <img src="/img/image 2.png" alt="logo_text5">
+                <img src="img/image 1.png" alt="logo_text1">
+                <img src="img/image 5.png" alt="logo_text2">
+                <img src="img/image 4.png" alt="logo_text3">
+                <img src="img/image 3.png" alt="logo_text4">
+                <img src="img/image 2.png" alt="logo_text5">
             </div>
-        </section>
- 
-        <section class="content_section3 text_find">
-            <p>SOUNDS</p>
-            <h2>Find your sound</h2>
-            <p>Preview and download millions of royalty-free samples from top producers, artists, and sound designers. Available on desktop, web, and mobile.</p>
-            <a class="btn_find" href="#">TRY SOUNDS</a>
-            <img src="/img/Vector 8.png" alt="img2_find">
-            <img src="/img/image 12.png" alt="img1_find">
         </section>
 
-        <section class="content_section4 bulid_text">
-            <img src="/img/Rectangle 11.png" alt="gray_fon2">
-            <div>
-                <img src="/img/Circle BG.png" alt="circle">
-                <div>
-                    <img src="/img/Logo 1.png" alt="logo_circle">
-                    <img src="/img/Logo 2.png" alt="logo_circle">
-                    <img src="/img/Logo 3.png" alt="logo_circle">
-                    <img src="/img/Logo 4.png" alt="logo_circle">
-                    <img src="/img/Logo 5.png" alt="logo_circle">
-                    <img src="/img/Logo 6.png" alt="logo_circle">
-                </div>
-                <div>
-                    <img src="/img/Logo 7.png" alt="logo_circle">
-                    <img src="/img/Logo 8.png" alt="logo_circle">
-                    <img src="/img/Logo 9.png" alt="logo_circle">
-                </div>
-            </div>
-            <P>PLUGINS</P>
-            <h2>Build your digital studio</h2>
-            <p>Try industry-leading music software for free, pay it off over time and own it forever.</p>
-            <a class="btn_bulid" href="#">TRY GEAR</a>
+        <section class="content_section3 text_find">
+            <p class="text_sec3">SOUNDS</p>
+            <h2 class="text2_sec3">Find your <span class="span_color">sound</span></h2>
+            <p class="text3_sec3">Preview and download millions of royalty-free samples from <br> top producers,
+                artists, and
+                sound designers. Available on <br> desktop, web, and mobile.</p>
+            <div class="btn_find_div"><a class="btn_find" href="#">TRY SOUNDS</a></div>
+
         </section>
+
+        <div class="section_3_4">
+            <!-- <section class="content_section3_1">
+                <img class="karra_section3" src="img/image 12.png" alt="img1_find">
+            </section> -->
+            <section class="content_section3_1">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/image 12.png" alt="slide">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/image 12.png" alt="slide">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/image 12.png" alt="slide">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content_section4 bulid_text">
+                <div class="container_sec4">
+                    <img src="img/Logos.png" alt="circle">
+                </div>
+                <div class="text_section4">
+                    <P class="text_sec4">PLUGINS</P>
+                    <h2 class="text2_sec4">Build your <span class="span_color">digital studio</span></h2>
+                    <p class="text3_sec4">Try industry-leading music software for <br> free, pay it off over time and
+                        own it forever.</p>
+                    <div class="btn_build_div"><a class="btn_bulid" href="#">TRY GEAR</a></div>
+                </div>
+            </section>
+        </div>
 
         <section class="content_section5 stay_text">
-            <p>STUDIO</p>
-            <h2>Stay in sync</h2>
-            <p>Try industry-leading music software for free, pay it off over time and own it forever.</p>
-            <a class="btn_stay" href="#">TRY STUDIO</a>
-            <img src="/img/image 13.png" alt="img_stay">
+            <div class="text_section5">
+                <p class="text_sec5">STUDIO</p>
+                <h2 class="text2_sec5">Stay in <span class="span_color">sync</span></h2>
+                <p class="text3_sec5">Try industry-leading music software for <br> free, pay it off over time and own it
+                    forever.</p>
+                <div class="btn_stay_div"><a class="btn_stay" href="#">TRY STUDIO</a></div>
+            </div>
+            <div class="container_sec5">
+                <img src="img/image 13.png" alt="img_stay">
+            </div>
         </section>
 
-        <section style="background-image: url('img/Vector\ 7.png'); height: 1686.71px;" class="content_section5 creators_text">
-            <h2 style="color: #ffff;">What creators are saying about Splice</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue tellus urna, mi velit diam. Turpis diam amet massa id.</p>
-            <a class="btn_stay" href="#">TRY IT NOW</a>
-            <img src="/img/Subtract.png" alt="planeta">
-
+        <section class="content_section6 creators_text">
+            <div class="sec6_world">
+                <div class="sec6_world_text">
+                    <h2 class="text_section6">What <span class="span_color">creators</span> are saying about Splice
+                    </h2>
+                    <p class="text2_section6">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Augue tellus
+                        urna, mi velit
+                        <br> diam. Turpis
+                        diam amet massa id.
+                    </p>
+                    <div class="div_btn_splice"><a class="btn_splice" href="#">TRY IT NOW</a></div>
+                </div>
+                <div class="cards" id="information-cards">
+                    <!-- <div class="img1_msg_sec6">
+                        <div class="card">
+                            <p class="card_text">I can always find what Im looking for on Splice, whether its the exact sound I want or just a bit of inspiration.
+                            </p>
+                            <div class="card_footer">
+                                <img class="card_avatar" src="/img/image 9.png" alt="ava">
+                                <p class="card_person">
+                                    <span class="card_person-name">Andrew Huang</span>
+                                    <small class="card_person-type">Artist</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <p class="card_text">Finally a way to buy plugins that works. By paying a little at a time, producers can get legit
+                                access to the top VSTs.</p>
+                            <div class="card_footer">
+                                <img class="card_avatar" src="/img/image 9_1.png" alt="ava">
+                                <p class="card_person">
+                                    <span class="card_person-name">KSHMR</span>
+                                    <small class="card_person-type">Artist</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img2_msg_sec6">
+                        <div class="card">
+                            <p class="card_text">Its been fun to dive into Splices creator community and explore tools that support my own creative
+                                process.</p>
+                            <div class="card_footer">
+                                <img class="card_avatar" src="/img/image 9_2.png" alt="ava">
+                                <p class="card_person">
+                                    <span class="card_person-name">Kesha Lee</span>
+                                    <small class="card_person-type">Artist</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <p class="card_text">I can always find what Im looking for on Splice, whether its the exact sound I want or just a bit
+                                of inspiration.</p>
+                            <div class="card_footer">
+                                <img class="card_avatar" src="/img/image 9.png" alt="ava">
+                                <p class="card_person">
+                                    <span class="card_person-name">Andrew Huang</span>
+                                    <small class="card_person-type">Artist</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="section6_2">
+                <div>
+                    <h2 class="herotext_sec6_2">As good as it sounds</h2>
+                </div>
+                <div class="con_sec6_2">
+                    <div class="d1sec6_2">
+                        <img src="img/Volume Up.png" alt="Volume Up">
+                        <h2 class="textsec6_2">100 royalty free</h2>
+                        <p class="text2sec6_2">Use sounds for anything. They’re cleared for commercial use.</p>
+                    </div>
+                    <div class="d2sec6_2">
+                        <img src="img/Unlock.png" alt="Unlock">
+                        <h2 class="text3sec6_2">No commitments</h2>
+                        <p class="text4sec6_2">Cancel your subscription at any <br> time, no questions asked.</p>
+                    </div>
+                    <div class="d3sec6_2">
+                        <img src="img/Download.png" alt="Download">
+                        <h2 class="text5sec6_2">Yours forever</h2>
+                        <p class="text6sec6_2">Keep everything you download. <br> Even if you cancel.</p>
+                    </div>
+                    <div class="d4sec6_2">
+                        <img src="img/Play.png" alt="Play">
+                        <h2 class="text7sec6_2">Individual samples</h2>
+                        <p class="text8sec6_2">Preview & download individual <br> samples, not just full packs.</p>
+                    </div>
+                </div>
+              
+            </div> 
+        </section>
+        <section class="block_gradient">
+               <h2 class="text_gradient">Come change the way <br> people make music</h2>
+               <div class="div_btn_gradient"><a class="btn_gradient" href="#">JOBS AT SPLICE</a></div>
         </section>
     </main>
 
     <footer class="page_footer footer">
+        <div class="footer-container">
+            <div class="logo-section">
+                <img src="img/Logo-Lock-Up-Light_3x 2.png" alt="Splice Logo" class="logo">
+                <p class="copyright">2021 Splice.com All Rights Reserved</p>
+            </div>
+        
+            <div class="menu-grid">
+
+                <div class="menu-column">
+                    <h2>STUDIO</h2>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">About Splice Studio</a></li>
+                        <li><a href="#">Managing Your Production Library</a></li>
+                        <li><a href="#">Collaborating with Baewatch</a></li>
+                    </ul>
+                </div>
+                
+                <div class="menu-column">
+                    <h2>COMMUNITY</h2>
+                    <ul>
+                        <li><a href="#">Ableton Live Projects</a></li>
+                        <li><a href="#">FL Studio Projects</a></li>
+                        <li><a href="#">Logic Pro X Projects</a></li>
+                        <li><a href="#">Garageband Projects</a></li>
+                        <li><a href="#">Remix Contests</a></li>
+                        <li><a href="#">Tiestos Secrets</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-column">
+                    <h2>SOUNDS</h2>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Catalog</a></li>
+                        <li><a href="#">How Jauz Uses Sounds</a></li>
+                        <li><a href="#">deadmau5s Chimaera</a></li>
+                        <li><a href="#">KSHMR Vol. 2</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-column">
+                    <h2>PLUGINS</h2>
+                    <ul>
+                        <li><a href="#">Top VSTs</a></li>
+                        <li><a href="#">Serum</a></li>
+                        <li><a href="#">Rent to Own</a></li>
+                        <li><a href="#">Free Plugins</a></li>
+                        <li><a href="#">Top Manufacturers</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-column">
+                    <h2>BEATMAKER</h2>
+                    <ul>
+                        <li><a href="#">Create Your Own Beat</a></li>
+                        <li><a href="#">Wakapella</a></li>
+                        <li><a href="#">Just Blaze</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-column">
+                    <h2>BLOG</h2>
+                    <ul>
+                        <li><a href="#">Latest Posts</a></li>
+                        <li><a href="#">Using Soundtoys Decapitator</a></li>
+                        <li><a href="#">Mastering 101</a></li>
+                        <li><a href="#">Producing Future Beats</a></li>
+                        <li><a href="#">Belonging at Splice</a></li>
+                    </ul>
+                </div>
+            </div>
+           
+            <div class="social-section">
+                <h2>FIND US ON SOCIAL</h2>
+                <div class="social-icons">
+                    <a href="#"><img src="img/Facebook - Negative.png" alt="Facebook"></a>
+                    <a href="#"><img src="img/Twitter - Negative.png" alt="Twitter"></a>
+                    <a href="#"><img src="img/Instagram - Negative.png" alt="Instagram"></a>
+                    <a href="#"><img src="img/YouTube - Negative.png" alt="Instagram"></a>
+                </div>
+                <div class="additional-links">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Help</a>
+                </div>
+            </div>
+        </div>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/scripts.js"></script>
 </body>
 
 </html>
