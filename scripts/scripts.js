@@ -70,8 +70,6 @@ const cards = {
 //       },
 //   });
 // });
-
-
 document.addEventListener('DOMContentLoaded', function () {
   new Swiper('.mySwiper', {
       loop: true,
@@ -81,4 +79,46 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       speed: 1000,
   });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const openModalBtn = document.getElementById("openModalBtn");
+    const modalOverlay = document.getElementById("modalOverlay");
+    const modalWindow = document.getElementById("modalWindow");
+    const cancelBtn = document.getElementById("cancelBtn");
+
+    // Открытие формы
+    openModalBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        modalOverlay.style.display = "block";
+        modalWindow.style.display = "block";
+        document.body.style.overflow = "hidden"; // блокируем скролл
+    });
+
+    // Закрытие по клику на подложку
+    modalOverlay.addEventListener("click", function (e) {
+        if (e.target === modalOverlay) {
+            closeModal();
+        }
+    });
+
+    // Закрытие по кнопке Cancel
+    cancelBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        closeModal();
+    });
+
+    // Функция закрытия модального окна
+    function closeModal() {
+        modalOverlay.style.display = "none";
+        modalWindow.style.display = "none";
+        document.body.style.overflow = ""; // восстанавливаем скролл
+    }
+
+    // Закрытие при нажатии Esc
+    document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && modalOverlay.style.display === "block") {
+            closeModal();
+        }
+    });
 });
