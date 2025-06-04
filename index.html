@@ -28,7 +28,7 @@
                 </ul>
             </nav>
             <div class="header_btn_div">
-                <div class="btn_div1"><a class="header_button" href="#">LOG IN</a></div>
+                <button  id="openModalBtn" class="btn_div1"><a class="header_button" href="#">LOG IN</a></button>
                 <div class="btn_div1"><a class="header_button" href="#">SUGN UP</a></div>
             </div>
         </div>
@@ -45,10 +45,8 @@
                     </p>
                 </div>
                 <div class="btn_hero_div">
-                    <a class="btn_hero" href="#">SIGN UP</a>
-                    <button id="openModalBtn" class="btn_hero">Open Form</button>
+                  <button><a class="btn_hero" href="#">SIGN UP</a></button> 
                 </div>
-                <!-- <div class="btn_hero_div"><a class="btn_hero" href="#">SUGN UP</a></div> -->
             </div>
 
             <img class="img_hero hero__img" src="img/Vector 5.png" alt="people">
@@ -314,26 +312,28 @@
 
     </footer>
 
-    <div class="modal-overlay" id="modalOverlay">
-        <div class="modal-window" id="modalWindow">
-            <form id="modalForm">
-                <h3>Sign Up</h3>
-                <label>
-                    Name:
-                    <input type="text" name="name" required />
-                </label>
-                <label>
-                    Email:
-                    <input type="email" name="email" required />
-                </label>
-                <div class="modal-buttons">
-                    <button type="submit">OK</button>
-                    <button type="button" id="cancelBtn">Cancel</button>
-                </div>
-            </form>
-        </div>
-    </div>
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal-window" id="modalWindow">
+        <form id="modalForm">
+            <h3>Форма входа</h3>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
 
+            <label for="password">Password</label>
+            <div class="password-input-container">
+                <input type="password" id="password" name="password" required />
+                <button type="button" id="togglePasswordVisibility" class="eye-icon"></button>
+            </div>
+
+            <button type="submit" class="login-btn">Авторизоваться</button>
+
+            <p class="signup-link">
+                У вас нет учетной записи?
+                <a href="#">Зарегистрироваться</a>
+            </p>
+        </form>
+    </div>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts/scripts.js"></script>
 </body>

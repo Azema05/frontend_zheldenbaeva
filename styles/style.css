@@ -47,7 +47,14 @@ a {
     margin-top: 42px;
     display: flex;
 }
-
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
 .btn_div1 {
     width: 119px;
     height: 39px;
@@ -676,8 +683,6 @@ a {
 .additional-links {
     padding-top: 20px;
 }
-
-/* Modal styles */
 .modal-overlay {
     display: none;
     position: fixed;
@@ -696,7 +701,7 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     background: white;
-    padding: 2rem;
+    padding: 32px;
     border-radius: 8px;
     width: 300px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -704,14 +709,67 @@ a {
 
 .modal-window h3 {
     margin-top: 0;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
 }
 
-.modal-buttons {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: space-between;
+.modal-window label {
+    display: block;
+    margin-top: 16px;
+    font-size: 14px;
+    color: #666;
 }
 
-.modal-buttons button {
-    padding: 0.5rem 1rem;
+.modal-window input,
+.modal-window input{
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.modal-window .password-input-container {
+    position: relative;
+}
+
+.modal-window .password-input-container img {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+}
+
+.modal-window .login-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 24px;
+    background: linear-gradient(to right, #00b4ff, #9138f9);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal-window .login-btn:hover {
+    opacity: 0.9;
+}
+
+.modal-window .signup-link {
+    margin-top: 16px;
+    font-size: 12.8px;
+    color: #666;
+    text-align: center;
+}
+
+.modal-window .signup-link a {
+    color: #00b4ff;
+    text-decoration: none;
 }

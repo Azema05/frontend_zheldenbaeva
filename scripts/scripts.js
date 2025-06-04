@@ -81,44 +81,52 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
 document.addEventListener("DOMContentLoaded", function () {
     const openModalBtn = document.getElementById("openModalBtn");
     const modalOverlay = document.getElementById("modalOverlay");
     const modalWindow = document.getElementById("modalWindow");
     const cancelBtn = document.getElementById("cancelBtn");
+    const togglePasswordVisibility = document.getElementById("togglePasswordVisibility");
+    const passwordInput = document.getElementById("password");
 
-    // Открытие формы
     openModalBtn.addEventListener("click", function (e) {
         e.preventDefault();
         modalOverlay.style.display = "block";
         modalWindow.style.display = "block";
-        document.body.style.overflow = "hidden"; // блокируем скролл
+        // document.body.style.overflow = "hidden"; // блокируем скролл
     });
 
-    // Закрытие по клику на подложку
     modalOverlay.addEventListener("click", function (e) {
         if (e.target === modalOverlay) {
             closeModal();
         }
     });
 
-    // Закрытие по кнопке Cancel
     cancelBtn.addEventListener("click", function (e) {
         e.preventDefault();
         closeModal();
     });
 
-    // Функция закрытия модального окна
     function closeModal() {
         modalOverlay.style.display = "none";
         modalWindow.style.display = "none";
-        document.body.style.overflow = ""; // восстанавливаем скролл
+        // document.body.style.overflow = ""; // восстанавливаем скролл
     }
 
-    // Закрытие при нажатии Esc
     document.addEventListener("keydown", function (e) {
         if (e.key === "Escape" && modalOverlay.style.display === "block") {
             closeModal();
+        }
+    });
+
+    togglePasswordVisibility.addEventListener("click", function () {
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            togglePasswordVisibility.querySelector("img").src = "/img/eye-off.svg";
+        } else {
+            passwordInput.type = "password";
+            togglePasswordVisibility.querySelector("img").src = "/img/eye.svg";
         }
     });
 });
