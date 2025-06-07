@@ -48,6 +48,15 @@ a {
     display: flex;
 }
 
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 .btn_div1 {
     width: 119px;
     height: 39px;
@@ -443,81 +452,91 @@ a {
     margin-left: 79px;
     margin-top: 39px;
 } */
-.section6_2{
+.section6_2 {
     background-image: url(/img/Patterns.png);
     background-repeat: no-repeat;
     padding-top: 167px;
     padding-bottom: 347px;
 }
-.herotext_sec6_2{
+
+.herotext_sec6_2 {
     width: 441px;
     height: 41px;
     font-size: 38px;
     color: #ffffff;
     font-weight: 900;
     margin: 0 auto;
-    text-align: center;  
+    text-align: center;
 }
-.con_sec6_2{
+
+.con_sec6_2 {
     display: flex;
     justify-content: space-evenly;
     margin-top: 113px;
 }
-.textsec6_2{
+
+.textsec6_2 {
     width: 196px;
     height: 24px;
     font-size: 22px;
     color: #ffffff;
-    font-weight: 500;   
+    font-weight: 500;
 }
-.text2sec6_2{
+
+.text2sec6_2 {
     margin-top: 19px;
     width: 288px;
     height: 54px;
     font-size: 16px;
-    color: #958A8A;  
+    color: #958A8A;
 }
-.text3sec6_2{
+
+.text3sec6_2 {
     width: 196px;
     height: 24px;
     font-size: 22px;
     color: #ffffff;
-    font-weight: 400; 
+    font-weight: 400;
 }
-.text4sec6_2{
+
+.text4sec6_2 {
     margin-top: 19px;
     width: 288px;
     height: 54px;
     font-size: 16px;
-    color: #958A8A;  
+    color: #958A8A;
 }
-.text5sec6_2{
+
+.text5sec6_2 {
     width: 196px;
     height: 24px;
     font-size: 22px;
     color: #ffffff;
-    font-weight: 400;   
+    font-weight: 400;
 }
-.text6sec6_2{
+
+.text6sec6_2 {
     margin-top: 19px;
     width: 288px;
     height: 54px;
-    color: #958A8A;  
+    color: #958A8A;
 }
-.text7sec6_2{
+
+.text7sec6_2 {
     width: 196px;
     height: 24px;
     font-size: 22px;
     color: #ffffff;
-    font-weight: 400;   
+    font-weight: 400;
 }
-.text8sec6_2{
+
+.text8sec6_2 {
     margin-top: 19px;
     width: 288px;
     height: 54px;
     font-size: 16px;
-    color: #958A8A;  
-    }
+    color: #958A8A;
+}
 
 .span_color {
     color: #0033FF;
@@ -534,9 +553,11 @@ a {
 .card:nth-child(1) {
     transform: translate(-80px, 0px);
 }
+
 .card:nth-child(2) {
     transform: translate(-80px, 0px);
 }
+
 .card_text {
     font-size: 18px;
     font-weight: 400;
@@ -675,4 +696,142 @@ a {
 
 .additional-links {
     padding-top: 20px;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+}
+
+.modal-window {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 32px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal-window h3 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+.modal-window label {
+    display: block;
+    margin-top: 16px;
+    font-size: 14px;
+    color: #666;
+}
+
+.modal-window input,
+.modal-window input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.modal-window .password-input-container {
+    position: relative;
+}
+
+.modal-window .password-input-container img {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+}
+
+.modal-window .login-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 24px;
+    background: linear-gradient(to right, #00b4ff, #9138f9);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal-window .login-btn:hover {
+    opacity: 0.9;
+}
+
+.modal-window .signup-link {
+    margin-top: 16px;
+    font-size: 12.8px;
+    color: #666;
+    text-align: center;
+}
+
+.modal-window .signup-link a {
+    color: #00b4ff;
+    text-decoration: none;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dots-loader {
+    display: flex;
+    gap: 8px;
+}
+
+.dots-loader span {
+    width: 10px;
+    height: 10px;
+    background: #00b4ff;
+    border-radius: 50%;
+    animation: bounceDots 1.4s infinite ease-in-out both;
+}
+
+.dots-loader span:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.dots-loader span:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+@keyframes bounceDots {
+
+    0%,
+    80%,
+    100% {
+        transform: scale(0);
+    }
+
+    40% {
+        transform: scale(1.0);
+    }
 }

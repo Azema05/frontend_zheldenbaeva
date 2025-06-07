@@ -5,11 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body class="page">
+
+    <div class="preloader">
+        <div class="dots-loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 
     <header class="page_header header">
         <div class="container">
@@ -17,6 +25,7 @@
             <a class="hader_logo" href="#">
                 <img src="img/Group.svg" alt="splice">
             </a>
+
             <nav class="header_navigation">
                 <ul>
                     <li><a class="header_navigation_a" href="#">STUDIO</a></li>
@@ -27,8 +36,8 @@
                 </ul>
             </nav>
             <div class="header_btn_div">
-              <div class="btn_div1"><a class="header_button" href="#">LOG IN</a></div>  
-              <div class="btn_div1"><a class="header_button" href="#">SUGN UP</a></div>  
+                <button id="openModalBtn" class="btn_div1"><a class="header_button" href="#">LOG IN</a></button>
+                <div class="btn_div1"><a class="header_button" href="#">SUGN UP</a></div>
             </div>
         </div>
     </header>
@@ -37,13 +46,15 @@
     <main class="page_content content">
         <section class="content_section1 hero">
             <div class="hero__description">
-              <img class="text_hero" src="img/Group 6.png" alt="text">
+                <img class="text_hero" src="img/Group 6.png" alt="text">
                 <div class="text_header">
                     <p>Royalty-free sounds. Industry-leading software. Endless inspiration. Start creating with
                         Splice.
                     </p>
                 </div>
-                <div class="btn_hero_div"><a class="btn_hero" href="#">SUGN UP</a></div>
+                <div class="btn_hero_div">
+                    <button><a class="btn_hero" href="#">SIGN UP</a></button>
+                </div>
             </div>
 
             <img class="img_hero hero__img" src="img/Vector 5.png" alt="people">
@@ -206,12 +217,12 @@
                         <p class="text8sec6_2">Preview & download individual <br> samples, not just full packs.</p>
                     </div>
                 </div>
-              
-            </div> 
+
+            </div>
         </section>
         <section class="block_gradient">
-               <h2 class="text_gradient">Come change the way <br> people make music</h2>
-               <div class="div_btn_gradient"><a class="btn_gradient" href="#">JOBS AT SPLICE</a></div>
+            <h2 class="text_gradient">Come change the way <br> people make music</h2>
+            <div class="div_btn_gradient"><a class="btn_gradient" href="#">JOBS AT SPLICE</a></div>
         </section>
     </main>
 
@@ -221,7 +232,7 @@
                 <img src="img/Logo-Lock-Up-Light_3x 2.png" alt="Splice Logo" class="logo">
                 <p class="copyright">2021 Splice.com All Rights Reserved</p>
             </div>
-        
+
             <div class="menu-grid">
 
                 <div class="menu-column">
@@ -233,7 +244,7 @@
                         <li><a href="#">Collaborating with Baewatch</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="menu-column">
                     <h2>COMMUNITY</h2>
                     <ul>
@@ -288,7 +299,7 @@
                     </ul>
                 </div>
             </div>
-           
+
             <div class="social-section">
                 <h2>FIND US ON SOCIAL</h2>
                 <div class="social-icons">
@@ -309,6 +320,28 @@
 
     </footer>
 
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-window" id="modalWindow">
+            <form id="modalForm">
+                <h3>Форма входа</h3>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="password">Password</label>
+                <div class="password-input-container">
+                    <input type="password" id="password" name="password" required />
+                    <button type="button" id="togglePasswordVisibility" class="eye-icon"></button>
+                </div>
+
+                <button type="submit" class="login-btn">Авторизоваться</button>
+
+                <p class="signup-link">
+                    У вас нет учетной записи?
+                    <a href="#">Зарегистрироваться</a>
+                </p>
+            </form>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts/scripts.js"></script>
 </body>
