@@ -433,25 +433,15 @@ button {
 }
 
 .cards {
+    grid-template-columns: 1fr 1fr;
+    align-content: baseline;
+    display: grid;
+    gap: 40px;
     margin-top: 328px;
     background-image: url(/img/Patterns.png);
     background-repeat: no-repeat;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-content: baseline;
 }
 
-/* .img1_msg_sec6 {
-    display: flex;
-    column-gap: 100px;
-}
-.img2_msg_sec6{
-    display: flex;
-    column-gap: 100px;
-    margin-left: 79px;
-    margin-top: 39px;
-} */
 .section6_2 {
     background-image: url(/img/Patterns.png);
     background-repeat: no-repeat;
@@ -550,6 +540,7 @@ button {
     border-radius: 3px;
 }
 
+
 .card:nth-child(1) {
     transform: translate(-80px, 0px);
 }
@@ -561,8 +552,12 @@ button {
 .card_text {
     font-size: 18px;
     font-weight: 400;
-    height: 95px;
-    width: 234px;
+    height: 90px; 
+    overflow: hidden; 
+    /* text-overflow: ellipsis; 
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical; */
 }
 
 .card_footer {
@@ -744,6 +739,7 @@ button {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
+    margin-left: -10px;
 }
 
 .modal-window .password-input-container {
