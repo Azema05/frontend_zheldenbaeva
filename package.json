@@ -1,0 +1,15 @@
+{
+  "name": "frontend_zheldenbaeva",
+  "version": "1.0.0",
+  "description": "frontend course my layout: https://www.figma.com/design/BvIW4tOb68Eal1mFpBK6ys/Splice-Landing-Page-(Community)-(Copy)?node-id=4002-32&node-type=frame&t=F1k9fWcSiinxN5cN-0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
