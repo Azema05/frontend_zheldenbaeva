@@ -7,5 +7,5 @@
     "sourceMap": true,
     "outFile": "scripts/main.js"
   },
-  "include": ["ts/**/*", "ts/swiper-bundle.min. ts"]
+  "include": ["ts/**/*"]
 }
